@@ -1,3 +1,5 @@
+'use strict'
+
 // Objects
 // one of the JavaScript's data types.
 // a collection of related data and/ or functionality.
@@ -70,10 +72,11 @@ console.log('name' in Dohyeon);
 console.log('age' in Dohyeon);
 console.log('random' in Dohyeon);
 console.log(Dohyeon.random);
-
+console.clear();
 // 6. for ..in VS for ..of
 // for (key in obj)
-console.clear();
+let key;
+
 for (key in Dohyeon) {
     console.log(key);
 }
@@ -84,6 +87,7 @@ const array = [1, 2, 4, 5];
 //     console.log(array[i]);
 // }
 
+let value;
 for (value of array) {
     console.log(value);
 }
@@ -100,7 +104,7 @@ const user3 = {};
 for (key in user) {
     user3[key] = user[key];
 }
-console.clear();
+// console.clear();
 console.log(user3);
 
 // 첫 번째 key => name
